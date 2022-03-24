@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />               
+        <title>Dew Point</title>          
+        <script language="JavaScript" type="text/javascript" src="amortize.js"></script>    
+        <link rel="stylesheet" href="global.css" />
+</head>
+
+<body>
+    <!--menu example -->
+    <ul>
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
+    </ul>
+
+    <!--calc -->
+    <h1>Dew Point Calculator</h1>
+    <hr />
+
+    <form>
+        <fieldset id="main">
+            <h1>Dew Point Calculator</h1>
+
+
+            <h1>Calculated Results</h1>
+            <fieldset>
+                <label>Relative Humidity</label>
+                <input type="text"
+                       name="relhumid"
+                       value="0"
+                       readonly=readonly />
+                <div id="humidError">
+
+                </div>
+                <label>Dew Point</label>
+                <input type="text"
+                       name="dewpoint"
+                       value="0"
+                       readonly=readonly />
+                <div id="dewError">
+
+
+                </div>
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>
