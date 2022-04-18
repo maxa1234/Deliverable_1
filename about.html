@@ -4,18 +4,40 @@
 <head>
     <meta charset="utf-8" />
     <title>Dew Point</title>
-    <link rel="stylesheet" href="global.css" />
+    <script language="JavaScript" type="text/javascript" src="calc.js"></script>
+    <link rel="stylesheet" type="text/css" href="./CSS/global.css">
 </head>
 <body>
+
+    <ul>
+        <li><a href="./index.html">|   Home   |</a></li>
+        <li><a href="./contact.html">|   Contact   |</a></li>
+        <li><a href="./about.html">|   About   |</a></li>
+    </ul>
+
+
+
+
     <div class="about-section">
         <h1>What is "Dew Point"?</h1>
-        <p>A measure of atmospheric moisture. It is the temperature to which air must be cooled in order to reach saturation (assuming air pressure and moisture content are constant).</p>
-        <p>A higher dew point indicates more moisture present in the air. It is sometimes referred to as Dew Point Temperature, and sometimes written as one word (Dewpoint). (weather.gov)</p>
+        <textarea rows="10" cols="100" readonly>
+        A measure of atmospheric moisture. It is the temperature to which air must be cooled in order to reach saturation (assuming air pressure and moisture content are constant).
+
+        A higher dew point indicates more moisture present in the air. It is sometimes referred to as Dew Point Temperature, and sometimes written as one word (Dewpoint). (weather.gov)
+
+        When air reaches dew point temperature at a given pressure, evaporation is in balances with liquid water, which means water vapor condenses at the same rate as liquid evaporates.
+        </textarea>
+
+        <div class="magnify"><img src="./Images/Dewpoint.svg" alt="Dewpoint Image"> <p><center>(Image from Wikipedia) </center></p></div>
+
+
+        <textarea rows="5" cols="100" readonly>
+            Td = T - ((100 - RH)/5.)
+            Td = Dewpoint 
+            T  = Temperature
+            RH = Relative Humidity % 
+        
+</textarea>
     </div>
-    <!-- to do :  save image and put it in image folder ink it to code replace url -->
-    <div class="thumb tright"><div class="thumbinner" style="width:332px;"><a href="https://upload.wikimedia.org/wikipedia/commons/2/2f/Dewpoint-RH.svg" class="image"><img alt="" src="./Dew point - Wikipedia_files/330px-Dewpoint-RH.svg.png" decoding="async" width="330" height="330" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Dewpoint-RH.svg/495px-Dewpoint-RH.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Dewpoint-RH.svg/660px-Dewpoint-RH.svg.png 2x" data-file-width="396" data-file-height="396"></a>  <div class="thumbcaption">
-        <div class="magnify"><a href="https://upload.wikimedia.org/wikipedia/commons/2/2f/Dewpoint-RH.svg" class="internal" title="Enlarge"></a></div></div></div></div>
-    <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1033289096">
-    (Wikipedia)
 </body>
 </html>
