@@ -15,7 +15,6 @@ function test(bal, intRate, terms) {
     var trate = intRate / 12;
     var pay = intRate - ((100 - terms)/.5);
 
- //   if (terms = null) { }
         
     var result =  intRate 
         
