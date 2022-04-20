@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title>Dew Point</title>
-    <script language="JavaScript" type="text/javascript" src="calc.js"></script>
-    <link rel="stylesheet" type="text/css" href="./CSS/global.css">
+<meta charset="utf-8" />               
+        <title>Dew Point</title>          
+        <script language="JavaScript" type="text/javascript" src="amortize.js"></script>    
+        <link rel="stylesheet" href="global.css" />
 </head>
 
 <body>
-
     <!--menu example -->
     <ul>
-        <li><a href="./index.html">|   Home   |</a></li>
-        <li><a href="./contact.html">|   Contact   |</a></li>
-        <li><a href="./about.html">|   About   |</a></li>
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
     </ul>
-
 
     <!--calc -->
     <h1>Dew Point Calculator</h1>
     <hr />
 
-
-
     <form>
-        <label for="principal"><b>Temperature</b></label><input type="text" id="Temperature" />
-        <p>&nbsp;</p>
-        <label for="interest"><b>RH</b></label><input type="text" id="RH" />
-        <p>&nbsp;</p>
-        <label for="terms"><b>DewPoint</b></label><input type="text" id="DewPoint" />.
-        <p>&nbsp;</p>
+        <fieldset id="main">
+            <h1>Dew Point Calculator</h1>
 
 
+            <h1>Calculated Results</h1>
+            <fieldset>
+                <label>Relative Humidity</label>
+                <input type="text"
+                       name="relhumid"
+                       value="0"
+                       readonly=readonly />
+                <div id="humidError">
 
+                </div>
+                <label>Dew Point</label>
+                <input type="text"
+                       name="dewpoint"
+                       value="0"
+                       readonly=readonly />
+                <div id="dewError">
+
+
+                </div>
+            </fieldset>
+        </fieldset>
     </form>
-    <div> <table> </table></div>
-    <form>  <input type="button" value="Calculate" onclick="getTableValues()" /></form>
-
-    <p></p>
-    <div id="Result"></div>
 </body>
 </html>
